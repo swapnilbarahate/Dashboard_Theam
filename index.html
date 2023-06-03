@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Usage Dashboard</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">Logo</a></li>
+            <li><a href="#">Storage Lists</a></li>
+            <li><a href="#">Team Lists</a></li>
+            <li><a href="#">Folders List</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div class="first-column">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="card">
+                <h2>Google Drive</h2>
+                <div class="progress-bar">
+                    <span style="width: 75%"></span>
+                </div>
+                <div class="usage-info">
+                    <p>45.5GB used</p>
+                    <p>59GB</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Dropbox</h2>
+                <div class="progress-bar">
+                    <span style="width: 40%"></span>
+                </div>
+                <div class="usage-info">
+                    <p>1.2GB used</p>
+                    <p>3GB</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>OneDrive</h2>
+                <div class="progress-bar">
+                    <span style="width: 83.3%"></span>
+                </div>
+                <div class="usage-info">
+                    <p>2.5GB used</p>
+                    <p>3GB</p>
+                </div>
+            </div>
+
+            <div class="recent-files">
+                <h2>Recent Files</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Members</th>
+                            <th>Last Modified</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>File 1</td>
+                            <td>John Doe</td>
+                            <td>May 30, 2023</td>
+                            <td><a href="#">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>File 2</td>
+                            <td>Jane Smith</td>
+                            <td>May 29, 2023</td>
+                            <td><a href="#">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td>File 3</td>
+                            <td>Mark Johnson</td>
+                            <td>May 28, 2023</td>
+                            <td><a href="#">Download</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="second-column">
+            <div class="card">
+                <h2>45.5GB</h2>
+                <h3>50GB</h3>
+                <div class="progress-bar">
+                    <span style="width: 91%"></span>
+                </div>
+                <div class="file-types">
+                    <h3>File Types</h3>
+                    <ul>
+                        <li>Images</li>
+                        <li>Documents</li>
+                        <li>Media Files</li>
+                        <li>Others</li>
+                        <li>Unknown Files</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="upgrade-card">
+                <h2>Upgrade Accounts</h2>
+                <p>Get 5GB of additional storage, 3 team members, and advanced features for teams.</p>
+                <button>Upgrade</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('content');
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('closed');
+            content.classList.toggle('closed');
+        }
+
+        const toggleBtn = document.createElement('div');
+        toggleBtn.classList.add('toggle-btn');
+        toggleBtn.innerHTML = '&equiv;';
+        toggleBtn.addEventListener('click', toggleSidebar);
+        document.body.appendChild(toggleBtn);
+    </script>
+</body>
+
+</html>

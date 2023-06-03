@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <div id="sidebar1">
+                <!-- <button class="btn-logo"> <a href="#">&#128014;</a> </button> -->
+                <button class="btn-logo">
+                    <a href="#" class="down-arrow"><img class="btn-png horse-png" src="images/horse.png" alt=""
+                            srcset=""></a>
+                </button>
+                <ul>
+                    <li><a href="#"><img class="btn-png img-white" src="images/db-folder.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img class="btn-png img-white" src="images/speech-bubble.png" alt="" srcset=""></a>
+                    </li>
+                    <li><a href="#"><img class="btn-png img-white" src="images/user.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img class="btn-png img-white" src="images/bar-graph.png" alt="" srcset=""></a></li>
+                    <li><a href="#"><img class="btn-png img-white" src="images/setting.png" alt="" srcset=""> </a></li>
+                </ul>
+                <button class="btn-logo"> <a href="#"><img class="btn-png" src="images/girl.png" alt="" srcset=""></a>
+                </button>
+            </div>
+            <div id="sidebar2">
+                <div class="header-sidebar-2">
+                    <div>
+                        <p class="sidebar-title">
+                            Marketing Team
+                        </p>
+                        <p class="sub-title">17 members</p>
+                    </div>
+                    <a href="#" class="down-arrow"><img class="btn-png" src="images/down-arrow.png"></a>
+                </div>
+                <div>
+                    <h3>Storage</h3>
+                    <p>My Files</p>
+                    <ul class="storage-list">
+                        <li><img class="folder-icon" src="images/folder-icon.png" alt="" srcset=""> Analytics</li>
+                        <li><img class="folder-icon" src="images/folder-icon.png" alt="" srcset=""> Assets</li>
+                        <li><img class="folder-icon" src="images/folder-icon.png" alt="" srcset=""> Marketing</li>
+                        <li><img class="folder-icon" src="images/folder-icon.png" alt="" srcset=""> Projects</li>
+                        <li><img class="folder-icon" src="images/folder-icon.png" alt="" srcset=""> Projector Cources
+                        </li>
+                    </ul>
+                </div>
+                <div class="recent-file-card">
+                    <p>Shared with me</p>
+                    <p>Recent</p>
+                    <p>Starred</p>
+                    <p>Trash</p>
+                </div>
+                <div class="empty">
+
+                </div>
+                <div class="card-sidebar">
+                    <ul class="sidebar-card-list">
+                        <li>
+                            <div>
+                                <img class="folder-icon" src="images/folder-transperent.png" alt="" srcset=""> Folder
+                            </div>
+                            <img class="folder-icon" src="" alt="" srcset="">
+                        </li>
+                        <li>
+                            <div>
+                                <img class="folder-icon" src="images/text-docunemt.png" alt="" srcset=""> Text Doc
+                            </div>
+                            <img class="folder-icon" src="images/right-arrow.png" alt="" srcset="">
+                        </li>
+                        <li>
+                            <div>
+                                <img class="folder-icon" src="images/presentaion-icon.png" alt="" srcset="">
+                                Presentation
+                            </div>
+                            <img class="folder-icon" src="images/right-arrow.png" alt="" srcset="">
+                        </li>
+                        <li>
+                            <div>
+                                <img class="folder-icon" src="images/sheet.png" alt="" srcset=""> Sheets
+                            </div>
+                            <img class="folder-icon" src="images/right-arrow.png" alt="" srcset="">
+                        </li>
+                        <li>
+                            <div>
+                                <img class="folder-icon" src="images/more.png" alt="" srcset=""> More
+                            </div>
+                            <img class="folder-icon" src="images/right-arrow.png" alt="" srcset="">
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="btn-create-new">
+                    <p>Create new</p>
+                    <p>+</p>
+                </div>
+            </div>
+        </div>
+        <div class="mid-section">
+            <div class="search-container">
+                <input class="searchbar" type="text" placeholder="  &#128269;  Search the files">
+            </div>
+            <div class="card-section-1">
+                <div class="card">
+                    <div class="card-row">
+                        <div class="drive-log">
+                            <img src="images/google-drive-logo.png" alt="" srcset="">
+                        </div>
+                        <img class="btn-png logo-more-1 logo-more" src="images/more.png" alt="" srcset="">
+                    </div>
+                    <h4>Google Drive</h4>
+                    <div class="usage-info">
+                        <p>45.5GB used</p>
+                        <p>59GB</p>
+                    </div>
+                    <progress value="75" max="100"> </progress>
+                </div>
+                <div class="card">
+                    <div class="card-row">
+                        <div class="drive-log">
+                            <img src="images/dropbox-logo.png" alt="" srcset="">
+                        </div>
+                        <img class="btn-png logo-more" src="images/more.png" alt="" srcset="">
+                    </div>
+
+                    <h4>Dropbox</h4>
+                    <div class="usage-info">
+                        <p>1.2GB used</p>
+                        <p>3GB</p>
+                    </div>
+                    <progress value="40" max="100"> </progress>
+                </div>
+                <div class="card">
+                    <div class="card-row">
+                        <div class="drive-log">
+                            <img class="logo-more" src="images/onedrive-logo.png" alt="" srcset="">
+                        </div>
+                        <img class="btn-png logo-more" src="images/more.png" alt="" srcset="">
+                    </div>
+                    <h4>OneDrive</h4>
+                    <div class="usage-info">
+                        <p>2.5GB used </p>
+                        <p>3GB</p>
+                    </div>
+                    <progress value="83.3" max="100"></progress>
+                </div>
+            </div>
+            <div class="card-section-2">
+                <div class="card-row">
+                    <h3>Folders</h3>
+                    <a href="#" target="_blank" rel="">View all</a>
+                </div>
+                <div class="section-small-card">
+                    <div class="card-small">
+                        <div class="card-row">
+                            <img class="btn-png" src="images/blue-folder.png" alt="" srcset="">
+                            <img class="btn-png" src="images/m1.png" alt="" srcset="">
+                        </div>
+                        <h5>Analytics</h5>
+                        <p>15 files</p>
+                    </div>
+
+                    <div class="card-small">
+                        <div class="card-row">
+                            <img class="btn-png" src="images/blue-folder.png" alt="" srcset="">
+                            <img class="btn-png" src="images/m3.png" alt="" srcset="">
+
+                        </div>
+                        <h5>Assets</h5>
+                        <p>345 filse</p>
+                    </div>
+                    <div class="card-small">
+                        <div class="card-row">
+                            <img class="btn-png" src="images/blue-folder.png" alt="" srcset="">
+                            <img class="btn-png" src="images/m2.png" alt="" srcset="">
+                        </div>
+                        <h5>Marketing</h5>
+                        <p>143 filse</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-section-3">
+
+                <div class="card-row">
+                    <h3>Recent Files</h3>
+                    <a href="#" target="_blank" rel="">View all</a>
+                </div>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>
+                                Name &#8593;
+                            </th>
+                            <th>
+                                Members
+                            </th>
+                            <th>
+                                Last Modified
+                            </th>
+                            <th>
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/ppt-logo.png" alt="" srcset="">
+                                Competitor Analysis Template
+                            </td>
+                            <td> Only you</td>
+                            <td> Sep 3,2019</td>
+                            <td><img class="btn-png" src="images/more.png" alt="" srcset=""></td>
+
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/word.png" alt="" srcset="">
+                                How to Create a Case Study
+                            </td>
+                            <td> 3 members</td>
+                            <td> Jun 12,2019</td>
+                            <td><img class="btn-png" src="images/more.png" alt="" srcset=""></td>
+
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/word.png" alt="" srcset="">
+                                Landing Page Structure
+                            </td>
+                            <td>10 members</td>
+                            <td>Jul 17,2019</td>
+                            <td><img class="btn-png" src="images/more.png" alt="" srcset=""></td>
+
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/ppt-logo.png" alt="" srcset="">
+                                Meeting Report
+                            </td>
+                            <td>5 members</td>
+                            <td> Aug 28,2019</td>
+                            <td><img class="btn-png" src="images/more.png" alt="" srcset=""></td>
+
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/zip-logo.png" alt="" srcset="">
+
+                                Project Documents
+                            </td>
+                            <td> Only you</td>
+                            <td> Aug 17,2019</td>
+                            <td><img class="btn-png" src="images/more.png" alt="" srcset=""></td>
+
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/word.png" alt="" srcset="">
+
+                                Reeview Checklist Template
+                            </td>
+                            <td>7 members</td>
+                            <td> Sep 8,2019</td>
+                            <td><img class="btn-png" src="images/more.png" alt="" srcset=""></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="card-right-1">
+                <div class="card-row">
+                    <h2 class="h1-left gb-color">45.5 GB</h2>
+                    <h2 class="h1-right">50 GB</h2>
+                </div>
+                <div class="card-row">
+                    <p class="sub-title">Usese</p>
+                    <p class="sub-title">Upgrade</p>
+                </div>
+                <progress value="75" max="100"> </progress>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/img-galary.png" alt="" srcset="">
+                            </td>
+                            <td class="td-description">
+                                <p>Images</p>
+                                <p class="sub-title">1756 filses</p>
+                            </td>
+                            <td>
+                                <p class="gb-color">15.5 GB</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/document-green.png" alt="" srcset="">
+                            </td>
+                            <td class="td-description">
+                                <p>Documents</p>
+                                <p class="sub-title">123 filses</p>
+                            </td>
+                            <td>
+                                <p class="gb-color">256 GB</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/media.png" alt="" srcset="">
+                            </td>
+                            <td class="td-description">
+                                <p>Media Files</p>
+                                <p class="sub-title">24 filses</p>
+                            </td>
+                            <td>
+                                <p class="gb-color">3.4 GB</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/zip-logo.png" alt="" srcset="">
+                            </td>
+                            <td class="td-description">
+                                <p>Other Files</p>
+                                <p class="sub-title">454 filses</p>
+                            </td>
+                            <td>
+                                <p class="gb-color">3 GB</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bold">
+                                <img class="btn-png" src="images/unknown-logo.png" alt="" srcset="">
+                            </td>
+                            <td class="td-description">
+                                <p>Unknown Files</p>
+                                <p class="sub-title">175 filses</p>
+                            </td>
+                            <td>
+                                <p class="gb-color">175 MB</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card-right-2">
+                <div class="card-right-2-inner">
+                    <img class="upgrade_account-logo" src="" alt="" srcset="">
+                    <h2 class="color-blue">Upgrade account!</h2>
+                    <p class="color-blue">5 integrations 30 team members advaced features for team</p>
+                    <div class="btn-create-new">
+                        <p>Upgrade</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
