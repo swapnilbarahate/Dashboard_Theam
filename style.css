@@ -184,7 +184,6 @@ body {
     flex-direction: column;
     padding: 20px;
     width: 17%;
-    /* border: 1px solid black; */
     background-color: white;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -214,13 +213,7 @@ body {
 
 .card:hover {
     color: white;
-    width: 280px;
     background-color: rgb(14, 77, 193);
-    border-radius: 12px;
-    padding: 20px 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    margin-left: -5%;
 }
 
 .card:hover p,
@@ -278,7 +271,6 @@ progress {
 
 .card-small {
     width: 260px;
-    /* height: 10vh; */
     background-color: white;
     border-radius: 12px;
     padding: 15px;
@@ -286,13 +278,7 @@ progress {
 
 .card-small:hover {
     color: white;
-    width: 280px;
     background-color: rgb(14, 77, 193);
-    border-radius: 12px;
-    padding: 20px 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    margin-left: -5%;
 }
 
 .card-row {
